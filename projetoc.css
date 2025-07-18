@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #62b5fc;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.secao {
+    margin: 30px 0;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(38, 0, 252);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid rgb(42, 32, 168);
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(42, 32, 168);
+    color:#ffffff;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+}
+
+button:hover{
+    transform: scale(0.85);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: rgba(116, 67, 21, 0.637)
+}
+
+@media (min-width: 768px) {
+    body {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .secao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    form input, form textarea {
+        flex: 1 1 100%;
+    }
+
+    form button {
+        width: 100px;
+        align-self: flex-start;
+    }
+}
